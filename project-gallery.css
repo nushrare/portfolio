@@ -119,3 +119,29 @@
 @media (max-width: 640px) {
   .project-feature { grid-template-columns: 1fr; }
 }
+/* Use more of the viewport on large displays while keeping reading widths. */
+@media (min-width: 100rem) {
+  .wrap {
+    width: min(calc(100% - 14rem), 112rem);
+  }
+
+  .site-header .nav-inner nav {
+    gap: clamp(1.75rem, 2.5vw, 4rem);
+  }
+
+  .site-header .nav-inner nav a {
+    font-size: clamp(1rem, .88vw, 1.2rem);
+  }
+
+  html[lang="en"] .landing .landing-content .signature-name {
+    font-size: clamp(9rem, 7.2vw, 12rem);
+  }
+
+  .project-grid {
+    gap: clamp(2rem, 2.5vw, 3rem);
+  }
+
+  .project-feature {
+    gap: clamp(3.5rem, 4vw, 5rem);
+  }
+}
