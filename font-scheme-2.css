@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400..700&family=Instrument+Serif&family=Noto+Sans+Devanagari:wght@400..700&display=swap");
+
+:root[data-font-scheme="2"] {
+  --sans: "Instrument Sans", "Noto Sans Devanagari", Arial, sans-serif;
+  --section-heading: var(--sans);
+  --signature-serif: "Instrument Serif", Georgia, serif;
+}
+
+[data-font-scheme="2"]:lang(en) .landing h1 {
+  font-family: var(--signature-serif);
+  letter-spacing: .015em;
+}
+
+[data-font-scheme="2"]:lang(hi) .landing h1 {
+  font-family: var(--sans);
+}
+
+[data-font-scheme="2"] .closing-signature {
+  font-family: var(--signature-serif);
+}
+
+[data-font-scheme="2"]:lang(hi) .closing-signature {
+  font-family: var(--sans);
+}
+
+[data-font-scheme="2"] :is(.section-top h2, .split h2, .contact-inner h2) {
+  letter-spacing: -.025em;
+}
+
+[data-font-scheme="2"]:lang(hi) :is(.section-top h2, .split h2, .contact-inner h2) {
+  letter-spacing: normal;
+}
