@@ -1,9 +1,12 @@
 const header = document.querySelector('.site-header');
 const landing = document.querySelector('#top');
+const work = document.querySelector('#work');
 const loader = document.querySelector('#page-loading');
 
 function syncHeader() {
-  header.toggleAttribute('data-past-landing', landing.getBoundingClientRect().bottom <= header.getBoundingClientRect().bottom + 1);
+  const anchorInset = parseFloat(getComputedStyle(work).scrollMarginTop) || 0;
+  const boundary = Math.max(anchorInset, header.getBoundingClientRect().bottom);
+  header.toggleAttribute('data-past-landing', landing.getBoundingClientRect().bottom <= boundary + 1);
 }
 
 let scheduled = false;
