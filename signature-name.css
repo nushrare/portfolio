@@ -1,13 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap");
 
+html[lang="en"] :is(.landing .signature-name, .closing-signature) {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-weight: 700;
+  letter-spacing: .018em;
+  text-transform: uppercase;
+}
+
 html[lang="en"] .landing .signature-name {
   max-width: none;
-  font-family: "Cormorant Garamond", Georgia, serif;
   font-size: clamp(1.5rem, 7.2vw, 9rem);
   white-space: nowrap;
-  font-weight: 700;
   line-height: 1.04;
-  letter-spacing: .018em;
   text-shadow: 0 2px 18px #27120c80;
 }
 
