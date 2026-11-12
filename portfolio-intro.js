@@ -28,6 +28,18 @@ window.addEventListener('hashchange', scheduleHeader);
 window.addEventListener('pageshow', scheduleHeader);
 window.addEventListener('load', scheduleHeader, {once:true});
 
+let arrivalPlaying = false;
+const homeLink = header.querySelector('.home-link');
+homeLink.addEventListener('click', (event) => {
+  if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  event.preventDefault();
+  if (location.hash !== '#top') history.pushState(null, '', '#top');
+  window.scrollTo({top:0, behavior:'instant'});
+  syncHeader();
+  playArrival();
+});
+
 if (!playArrival() && document.readyState !== 'complete') {
   const showTimer = setTimeout(() => { loader.hidden = false; }, 180);
   const timeout = setTimeout(finish, 12000);
@@ -46,16 +58,13 @@ function playArrival() {
   const target = landing.querySelector('.signature-mark');
   const skip = arrival.querySelector('.arrival-skip');
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
-  if ((location.hash && location.hash !== '#top') || scrollY > 20 || reduced.matches || typeof mark.animate !== 'function') return false;
-  try {
-    if (sessionStorage.getItem('aj-arrival-seen')) return false;
-    sessionStorage.setItem('aj-arrival-seen', '1');
-  } catch { /* The intro can still play with storage blocked. */ }
+  if (arrivalPlaying || (location.hash && location.hash !== '#top') || scrollY > 20 || reduced.matches || typeof mark.animate !== 'function') return false;
 
+  arrivalPlaying = true;
   let animation;
   let done = false;
-  const timer = setTimeout(dock, 1500);
-  const cutoff = setTimeout(finish, 2700);
+  const timer = setTimeout(dock, 2370);
+  const cutoff = setTimeout(finish, 3500);
   arrival.hidden = false;
   target.classList.add('is-arriving');
   skip.addEventListener('click', finish);
@@ -80,6 +89,7 @@ function playArrival() {
   function finish() {
     if (done) return;
     done = true;
+    arrivalPlaying = false;
     clearTimeout(timer);
     clearTimeout(cutoff);
     if (document.activeElement === skip) header.querySelector('.home-link').focus({preventScroll:true});
