@@ -72,3 +72,15 @@
 @media (max-width: 540px) {
   .case-gallery { grid-template-columns: 1fr; }
 }
+
+.case-hero .case-tagline {
+  color: var(--ink);
+  font-weight: 650;
+  margin-bottom: .4rem;
+}
+
+.case-subheading {
+  color: var(--muted);
+  font-size: clamp(1rem, 1.7vw, 1.2rem);
+  margin-bottom: 1.25rem;
+}
