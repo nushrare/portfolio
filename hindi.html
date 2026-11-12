@@ -16,7 +16,7 @@
 <link rel="stylesheet" href="brand-sections.css">
 <link rel="stylesheet" href="translucent-nav.css">
 <link rel="stylesheet" href="header-state.css">
-<link rel="stylesheet" href="signature-contact.css?v=contact-form">
+<link rel="stylesheet" href="signature-contact.css?v=compact-contact">
 <link rel="alternate" hreflang="en" href="./">
 <link rel="alternate" hreflang="hi" href="hindi.html">
 <link rel="stylesheet" href="project-gallery.css?v=work-order">
@@ -114,12 +114,12 @@
     <div class="contact-compose" hidden>
       <h3 id="contact-form-title">मुझे लिखें</h3>
       <form class="contact-form" aria-labelledby="contact-form-title" aria-describedby="contact-form-note">
-        <div class="contact-form-names">
+        <div class="contact-form-details">
           <label>पहला नाम<input name="firstName" autocomplete="given-name" maxlength="80" required></label>
           <label>उपनाम<input name="lastName" autocomplete="family-name" maxlength="80" required></label>
+          <label>ईमेल<input type="email" name="email" autocomplete="email" maxlength="254" required></label>
         </div>
-        <label>ईमेल<input type="email" name="email" autocomplete="email" maxlength="254" required></label>
-        <label>संदेश<textarea name="message" rows="4" required></textarea></label>
+        <label>संदेश<textarea name="message" rows="3" required></textarea></label>
         <button type="submit">ईमेल का ड्राफ़्ट खोलें</button>
         <p id="contact-form-note">आपका संदेश भेजने के लिए आपके ईमेल ऐप में खुलेगा।</p>
       </form>
