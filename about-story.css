@@ -1,0 +1,29 @@
+.about-story > .large {
+  max-width: 42ch;
+  margin-block: 1.2rem 1.6rem;
+}
+.about-copy,
+.about-elsewhere {
+  max-width: 63ch;
+}
+.about-copy p,
+.about-elsewhere p {
+  color: var(--muted);
+}
+.about-elsewhere {
+  margin-top: 1.8rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+}
+.about-elsewhere h3 {
+  margin-bottom: .75rem;
+  font: 650 1.12rem/1.4 var(--sans);
+  letter-spacing: 0;
+}
+.about-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .65rem 1.5rem;
+  font-weight: 650;
+}
+.about-links a { color: var(--accent); }
