@@ -1,4 +1,4 @@
-.site-header[data-at-contact] .home-link{visibility:hidden}
+.site-header[data-at-contact] .home-link,.site-header[data-at-contact] .header-name{visibility:hidden}
 .contact-close{border-top:1px solid var(--line);display:grid;align-items:center;min-height:clamp(31rem,68svh,47rem);text-align:center;background:radial-gradient(ellipse at 50% 42%,var(--panel),var(--bg) 72%)}
 .contact-inner{padding-block:clamp(4rem,9vw,8rem)}
 .contact-inner>.label{letter-spacing:.19em}
