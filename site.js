@@ -5,11 +5,6 @@ const publicLinks = {
 const root = document.documentElement;
 if (document.readyState !== 'complete') root.dataset.loading = 'true';
 window.addEventListener('load', () => delete root.dataset.loading, {once:true});
-const feelingButtons = [...document.querySelectorAll('[data-feeling]')];
-feelingButtons.forEach(button => button.addEventListener('click', () => {
-  feelingButtons.forEach(choice => choice.setAttribute('aria-pressed', String(choice === button)));
-  document.querySelector('.feedback').textContent = 'You chose ' + button.dataset.feeling.toLowerCase() + '. Take a moment to notice what you need next.';
-}));
 function addLink(section, label, url, isDownload = false) {
   if (!url) return;
   const link = document.createElement('a');

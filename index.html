@@ -3,24 +3,26 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="The portfolio of Ms. Anushka Jain, Interaction & UI/UX Designer and Junior Developer.">
+<meta name="description" content="The portfolio of Ms. Anushka Jain, Interaction & UI/UX Designer and Developer.">
 <meta name="color-scheme" content="light dark">
 <title>Ms. Anushka Jain — Design & Development</title>
-<link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+<link rel="icon" href="assets/aj-monogram.svg" type="image/svg+xml">
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="aura-landing.css">
+<link rel="stylesheet" href="portfolio-sections.css">
 <script src="site.js" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="nav-inner wrap">
-    <a class="home-link" href="#top">Anushka Jain</a>
+    <a class="home-link" href="#top"><img src="assets/aj-monogram.svg" alt="" width="36" height="36">Anushka Jain</a>
     <nav aria-label="Main navigation">
       <a href="#work">Work / Projects</a>
       <a href="#about">About</a>
       <a href="#skills">Technical Skills</a>
       <a href="#awards">Awards &amp; Accomplishments</a>
+      <a href="#contact">Contact</a>
     </nav>
   </div>
 </header>
@@ -29,32 +31,51 @@
   <div class="aura" aria-hidden="true"></div>
   <div class="landing-content wrap">
     <h1 id="title">Ms. Anushka Jain</h1>
-    <p class="landing-role">Interaction &amp; UI/UX Designer <span aria-hidden="true">·</span> Junior Developer</p>
-    <div class="secondary"><a href="#resume">Résumé ↗</a><a href="#contact">Contact ↗</a></div>
+    <p class="landing-role">Interaction &amp; UI/UX Designer <span aria-hidden="true">·</span> Developer</p>
+    <div class="secondary"><a href="#resume">Résumé ↗</a></div>
   </div>
   <a class="landing-work" href="#work">Explore my work <span aria-hidden="true">↓</span></a>
 </section>
 <section class="work wrap" id="work" aria-labelledby="work-title">
-  <div class="section-top"><p class="label">01 / Portfolio</p><h2 id="work-title">Selected <i>work.</i></h2><p>Project stories, working prototypes, and experiments in progress.</p></div>
-  <div class="projects">
-    <article class="project featured">
-      <div class="project-art anuraga" aria-hidden="true"><div class="prototype"><small>ANURAGA / DAILY CHECK-IN</small><strong>How can we<br>support you today?</strong><div class="rings">✳</div><span>Check in · Explore · Reflect</span></div></div>
-      <div class="project-copy"><p class="label">01 / Web prototype</p><h3>ANURAGA</h3><p>A relationship support concept that brings together a daily check-in, attachment insights, and a communication toolkit.</p>
-      <details><summary>Read the project story</summary><p>ANURAGA organizes its home screen around three entry points: log how you feel, explore relationship patterns, or find scripts and repair tools for a difficult moment. The web prototype gives each a dedicated page, with a bottom navigation to move among them.</p><p>The check-in below is a small portfolio demonstration inspired by that flow.</p></details>
-      <details class="demo"><summary>Try a check-in</summary><p>Choose a word for how you feel right now. This demo doesn’t save your choice.</p><div class="choices" role="group" aria-label="Choose a feeling"><button type="button" aria-pressed="false" data-feeling="Steady">Steady</button><button type="button" aria-pressed="false" data-feeling="Unsure">Unsure</button><button type="button" aria-pressed="false" data-feeling="Overwhelmed">Overwhelmed</button></div><p class="feedback" aria-live="polite"></p></details></div>
-    </article>
-    <article class="project index"><div class="project-copy"><p class="label">02 / Project index</p><h3>Swarnika</h3><p>Project story in preparation.</p></div><span aria-hidden="true">S.</span></article>
-    <article class="project index"><div class="project-copy"><p class="label">03 / Studio notes</p><h3>In the works</h3><p>A space for current semester projects and creative experiments.</p></div><span aria-hidden="true">✳</span></article>
+  <div class="section-top"><h2 id="work-title">Work / Projects</h2></div>
+  <div class="project-group" aria-labelledby="design-projects">
+    <h3 id="design-projects">UX/UI &amp; Interaction Design</h3>
+    <ol class="project-grid">
+      <li><article><p class="project-type">Physical Interfaces · Group project</p><h4>SafeWay</h4><p>A safety-first TTC navigation concept with Safe Mode, safe stops, disruption alerts, and accessible rerouting. I co-designed the Figma wireframes and prototypes.</p></article></li>
+      <li><article><p class="project-type">Physical Interfaces · Group project</p><h4>Checkless</h4><p>A Tamagotchi-inspired convertible smartwatch/keychain and companion app concept. I co-designed the device and app flows and used fal.ai to produce a scene-by-scene product video.</p></article></li>
+      <li><article><p class="project-type">Information architecture · Team project</p><h4>Craigslist Website Redesign</h4><p>A six-week redesign of the classified ads experience. Surveys and think-aloud usability testing informed revised navigation, user flows, and wireframes.</p></article></li>
+    </ol>
+  </div>
+  <div class="project-group" aria-labelledby="developer-projects">
+    <h3 id="developer-projects">Development</h3>
+    <ol class="project-grid">
+      <li><article><p class="project-type">Interface Development · Coursework</p><h4>ANURAGA</h4><p>A relationship wellbeing web prototype with mood selection, daily check-ins, reflection forms, and browser-based storage. Built with HTML, CSS, JavaScript, and Bootstrap.</p></article></li>
+      <li><article><p class="project-type">Data visualization</p><h4>Interactive Financial Dashboard &amp; Data Visualizations</h4><p>Interactive charts and data views with searching, sorting, filtering, and calculations. Built with JavaScript, Chart.js, jQuery, and DataTables.</p></article></li>
+      <li><article><p class="project-type">Web Development · Coursework</p><h4>API Chatbot and Dynamic Data Interfaces</h4><p>A chatbot exercise that sends JSON requests to the Gemini API and displays the response, alongside JSON-driven tables and dynamic page loading.</p></article></li>
+    </ol>
   </div>
 </section>
 <section class="split wrap" id="about" aria-labelledby="about-title">
-  <p class="label">About</p><div><h2 id="about-title">Professional Summary</h2><p class="large">I’m Anushka, an interaction design student at George Brown Polytechnic with a background in computer science studies at Toronto Metropolitan University.</p><p>My practice brings together visual design, interaction design, and programming. I like getting close to both halves of a project: shaping the experience and figuring out how to make it work.</p></div>
+  <p class="label">About</p><div><h2 id="about-title">Professional Summary</h2><p class="large">I’m a final-year Interaction Design student at George Brown Polytechnic with project experience in UX research, information architecture, user flows, wireframing, interface prototyping, and front-end development.</p><p>My prior Computer Science studies at Toronto Metropolitan University help me connect human-centred design with how interfaces are built. I’m interested in hands-on design and working closely with product and engineering teams to turn user needs into clear, accessible interfaces.</p></div>
 </section>
 <section class="split wrap" id="skills" aria-labelledby="skills-title">
-  <p class="label">Skills</p><div><h2 id="skills-title">Technical Skills</h2><dl><dt>Design</dt><dd>Interface design, interaction design, prototyping</dd><dt>Development</dt><dd>HTML, CSS, JavaScript, Bootstrap</dd></dl></div>
+  <p class="label">Skills</p><div><h2 id="skills-title">Technical Skills</h2>
+    <ul class="skill-list">
+      <li><strong>UX &amp; Interaction Design:</strong> UX research, usability testing (surveys and think-aloud testing), information architecture, sitemaps, user flows, personas, journey maps, cognitive ergonomics, interaction design, information design, interface design, visual design, wireframing, prototyping, accessibility, technical drawing</li>
+      <li><strong>Design Tools &amp; Technologies:</strong> Adobe Illustrator, Photoshop, After Effects, Autodesk Maya, Figma, Canva, Bootstrap, Processing (Java mode), GitHub</li>
+      <li><strong>Programming &amp; Web Development:</strong> HTML, CSS, JavaScript, Java, jQuery, AJAX, Node.js, Python, C++</li>
+      <li><strong>Data &amp; APIs:</strong> Chart.js, DataTables, JSON, API integration</li>
+    </ul>
+  </div>
 </section>
 <section class="split wrap" id="awards" aria-labelledby="awards-title">
-  <p class="label">Recognition</p><div><h2 id="awards-title">Awards &amp; Accomplishments</h2><p>Entries to be added from your verified résumé and records.</p></div>
+  <p class="label">Recognition</p><div><h2 id="awards-title">Awards &amp; Accomplishments</h2>
+    <ul class="award-list">
+      <li><strong>TEDx TMU Ambassador Award</strong><span>Toronto Metropolitan University · February 2023</span></li>
+      <li><strong>Top 20, Toastmasters TEDx TMU Public Speaking Competition</strong><span>Toronto Metropolitan University · February 2023</span></li>
+      <li><strong>100 Designs Achievement Certificate</strong><span>Canva · 2024</span></li>
+    </ul>
+  </div>
 </section>
 <section class="split wrap" id="resume" aria-labelledby="resume-title">
   <p class="label">03 / Résumé</p><div><h2 id="resume-title">Design <i>&amp;</i> development.</h2><dl><dt>Design</dt><dd>Interaction design · UI/UX · Visual design · Prototyping</dd><dt>Development</dt><dd>Front-end development · Creative coding · Interactive prototypes</dd><dt>Education</dt><dd>Interaction Design, George Brown Polytechnic<br>Prior Computer Science studies, Toronto Metropolitan University</dd></dl><p id="resume-note">A downloadable résumé will be added here.</p><div id="resume-links" class="actions"></div></div>
