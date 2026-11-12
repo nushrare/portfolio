@@ -1,6 +1,6 @@
 // Add only the links approved for the public portfolio.
 const publicLinks = {
-  resume: '', email: '', linkedin: '', github: '', booking: '',
+  resume: '',
 };
 const root = document.documentElement;
 if (document.readyState !== 'complete') root.dataset.loading = 'true';
@@ -17,7 +17,3 @@ function addLink(section, label, url, isDownload = false) {
 }
 addLink('resume', 'Open résumé', publicLinks.resume);
 addLink('resume', 'Download résumé', publicLinks.resume, true);
-addLink('contact', 'Email me', publicLinks.email ? 'mailto:' + publicLinks.email : '');
-addLink('contact', 'LinkedIn', publicLinks.linkedin);
-addLink('contact', 'GitHub', publicLinks.github);
-addLink('contact', 'Book a conversation', publicLinks.booking);
