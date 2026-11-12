@@ -7,7 +7,7 @@
 .project-grid article{height:100%;display:flex;flex-direction:column}
 .project-preview{aspect-ratio:1.62;display:grid;place-items:center;overflow:hidden;background:#21384a;color:#e9f7ff}
 .project-preview svg{width:100%;height:100%}
-.preview-checkless{background:#3c2754;color:#f4cfff}.preview-craigslist{background:#f2e5fd;color:#57328a}.preview-dashboard{background:#183e3a;color:#b8f0cb}.preview-chat{background:#202948;color:#a5bcff}
+.preview-checkless{background:#3c2754;color:#f4cfff}.preview-craigslist{background:#f2e5fd;color:#57328a}.preview-dashboard{background:#183e3a;color:#b8f0cb}.preview-cost-story{background:#482438;color:#ffd0a0}
 .preview-anuraga{display:flex;justify-content:center;align-items:center;gap:.5rem;background:radial-gradient(ellipse at 60% 40%,#a91c43,#390c20 70%)}
 .preview-anuraga img{height:88%;width:auto;max-width:40%;object-fit:contain;transform:rotate(7deg);border-radius:12%;box-shadow:0 8px 22px #13060bb0}
 .preview-anuraga img:first-child{transform:rotate(-9deg) translateY(8%)}
