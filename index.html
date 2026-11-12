@@ -15,13 +15,14 @@
 <link rel="stylesheet" href="signature-motion.css">
 <link rel="stylesheet" href="brand-sections.css">
 <link rel="stylesheet" href="translucent-nav.css">
-<script src="site.js" defer></script>
+<link rel="stylesheet" href="header-state.css">
+<script src="header-state.js" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="nav-inner wrap">
-    <a class="home-link" href="#top"><img src="assets/aj-interlock.svg" alt="" width="36" height="36">Anushka Jain</a>
+    <a class="home-link" href="#top" aria-label="Anushka Jain — Home"><img src="assets/aj-interlock.svg" alt="" width="36" height="36"><span class="header-name">Anushka Jain</span></a>
     <nav aria-label="Main navigation">
       <a href="#work">Work / Projects</a>
       <a href="#about">About</a>
@@ -99,5 +100,9 @@
 </section>
 </main>
 <footer class="footer wrap"><span class="footer-signature"><img src="assets/aj-interlock.svg" alt="" width="26" height="26">Ms. Anushka Jain</span><a href="#top">Back to top ↑</a></footer>
+<div id="page-loading" class="page-loading" role="status" hidden>
+  <span class="signature-mark" aria-hidden="true"><img src="assets/aj-interlock.svg" alt="" width="48" height="48"><span class="signature-shine"></span><span class="signature-spark"></span></span>
+  <span>Loading…</span>
+</div>
 </body>
 </html>
