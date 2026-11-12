@@ -1,0 +1,17 @@
+:root{--brand-bronze:#80502f;--brand-gold:#e4b370;--brand-ink:#221310}
+@media(prefers-color-scheme:dark){:root{--brand-bronze:#efbf81}}
+.site-header{border-bottom-color:color-mix(in srgb,var(--brand-bronze) 32%,var(--line))}
+.home-link img{width:33px;height:33px}
+.nav-inner nav a:hover,.secondary a:hover{color:var(--brand-bronze)}
+.landing{--halo-paper:#22130f;--halo-ink:#fff0d8;--halo-muted:#f7ddbd;--halo-line:#f4c98f;--halo-focus:#fff0cf;min-height:calc(100svh - 69px);padding-block:4.25rem 7rem;background:#22130f}
+.landing .aura{mask-image:none;background:radial-gradient(ellipse at 50% 48%,#4d2a1b 0%,#573221 17%,#8d4c27 30%,#663719 45%,#321a12 65%,#20120f 87%)}
+.landing .aura::after{inset:0;background:radial-gradient(ellipse at 50% 48%,#21120e 0%,#2b160fdb 21%,#32191245 39%,transparent 63%),url("assets/solar-rays.svg") center / cover no-repeat;mask-image:none;opacity:1;animation:solar-light 12s ease-in-out infinite alternate}
+@keyframes solar-light{from{transform:scale(1);opacity:.82}to{transform:scale(1.035);opacity:1}}
+.signature-mark{margin:0 auto 1.2rem;width:clamp(40px,5.8vw,66px);height:auto;filter:brightness(1.27)}
+.landing h1{font-size:clamp(2.5rem,7.6vw,8.7rem);letter-spacing:-.053em;text-shadow:0 2px 30px #27120c;max-width:none}
+.landing-role{margin-top:1.35rem}.landing .secondary{margin-top:1.05rem}
+.landing .secondary a{border-bottom:1px solid #e0aa766c;padding:.15rem .25rem}
+.landing-work{bottom:1.45rem}.landing-work span{color:#e6b171}
+.footer-signature{display:inline-flex;align-items:center;gap:.6rem}
+@media(max-width:540px){.landing{min-height:calc(100svh - 118px)}.landing h1{max-width:12ch}.landing .aura::after{background-size:auto,auto 107%}}
+@media(prefers-reduced-motion:reduce){.landing .aura::after{animation:none}}

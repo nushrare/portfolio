@@ -1,0 +1,8 @@
+.signature-mark{position:relative;width:clamp(50px,6vw,74px);aspect-ratio:1;margin:0 auto 1.15rem;filter:none}
+.signature-mark img{width:100%;height:100%}
+.signature-shine{position:absolute;inset:0;mask:url("assets/aj-interlock.svg") center / contain no-repeat;background:linear-gradient(108deg,transparent 36%,#fff5cf 49%,#fff 50%,#ffdf9a 53%,transparent 64%) -100% 0 / 220% 100% no-repeat;opacity:0;animation:signature-sweep 3s 1s ease-in-out infinite}
+.signature-spark{position:absolute;left:67%;top:36%;width:19px;aspect-ratio:1;transform:translate(-50%,-50%) scale(0);opacity:0;filter:drop-shadow(0 0 6px #ffbd62);animation:signature-spark 3s 1s ease-in-out infinite}
+.signature-spark::before{content:"";display:block;width:100%;height:100%;background:#fff4cc;clip-path:polygon(50% 0%,60% 39%,100% 50%,60% 61%,50% 100%,40% 61%,0% 50%,40% 39%)}
+@keyframes signature-sweep{0%,8%{opacity:0;background-position:145% 0}14%{opacity:1}26%,100%{opacity:0;background-position:-45% 0}}
+@keyframes signature-spark{0%,13%{opacity:0;transform:translate(-50%,-50%) scale(0) rotate(-14deg)}17%{opacity:1;transform:translate(-50%,-50%) scale(1) rotate(0)}25%,100%{opacity:0;transform:translate(-50%,-50%) scale(.15) rotate(12deg)}}
+@media(prefers-reduced-motion:reduce){.signature-shine,.signature-spark{animation:none}}

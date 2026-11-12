@@ -1,0 +1,13 @@
+:root{--bg:#faf6ee;--ink:#2e1c15;--muted:#604738;--line:#d9c5a9;--panel:#f3e9da;--accent:#784622;--on:#fff6e6}
+@media(prefers-color-scheme:dark){:root{--bg:#201611;--ink:#f8ead7;--muted:#d6bca3;--line:#654a39;--panel:#2c1e17;--accent:#f1c586;--on:#28160d}}
+.home-link{letter-spacing:-.025em}.site-header .home-link img{width:36px;height:36px}
+.section-top h2,.split h2{font-family:Georgia,"Times New Roman",serif;letter-spacing:-.048em}
+.project-group>h3{color:var(--accent);font-weight:600}
+.project-grid li{position:relative;border-top:2px solid var(--line);background:var(--panel)}
+.project-grid li::before{content:"";position:absolute;top:-2px;left:0;width:2.2rem;height:2px;background:var(--accent)}
+.project-grid h4{font-family:Georgia,"Times New Roman",serif;font-weight:500}
+.project-grid .project-type,.label{color:var(--accent)}
+.skill-list li::marker{color:var(--accent)}
+.award-list li{border-top-color:var(--line)}
+.contact-directory a{text-decoration-color:var(--accent)}
+.footer{color:var(--muted)}
