@@ -1,0 +1,48 @@
+.section-top h2,
+.split h2,
+.contact-inner h2 {
+  font-family: var(--sans);
+  font-size: clamp(2rem, 4.5vw, 3.55rem);
+  font-weight: 650;
+  line-height: 1.12;
+  letter-spacing: -.035em;
+  text-wrap: balance;
+}
+
+#about h2 {
+  font-size: clamp(2.25rem, 5vw, 4.25rem);
+  font-weight: 600;
+}
+
+.split > div {
+  grid-column: 2;
+  min-width: 0;
+}
+
+.project-feature h3,
+.project-grid h4 {
+  font-family: var(--sans);
+  font-weight: 650;
+  letter-spacing: -.02em;
+  line-height: 1.15;
+}
+
+.project-feature h3 { font-size: clamp(1.8rem, 3.6vw, 3rem); }
+
+.project-feature-label,
+.contact-compose h3 {
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+html[lang="hi"] .section-top h2,
+html[lang="hi"] .split h2,
+html[lang="hi"] .project-feature h3,
+html[lang="hi"] .project-grid h4 {
+  line-height: 1.35;
+  letter-spacing: 0;
+}
+
+@media (max-width: 700px) {
+  .split > div { grid-column: 1; }
+}

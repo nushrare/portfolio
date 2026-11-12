@@ -49,3 +49,19 @@
   .ux-hero-layout { grid-template-columns: 1fr; }
   .ux-hero img { max-height: 23rem; }
 }
+
+.ux-hero h1,
+.ux-section h2 {
+  font-family: var(--sans);
+  font-weight: 650;
+  letter-spacing: -.035em;
+  line-height: 1.12;
+}
+.ux-kicker {
+  letter-spacing: 0;
+  text-transform: none;
+}
+html[lang="hi"] .ux-section h2 {
+  letter-spacing: 0;
+  line-height: 1.35;
+}
