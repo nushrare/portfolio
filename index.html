@@ -8,27 +8,33 @@
 <title>Ms. Anushka Jain — Design & Development</title>
 <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="landing.css">
 <script src="site.js" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<header class="header wrap">
-  <a class="brand" href="#top"><img src="assets/mark.svg" alt="" width="34" height="34"><span>Ms. Anushka Jain</span></a>
-  <nav aria-label="Main"><a href="#work">Work</a><a href="#about">About</a><a href="#resume">Résumé</a><a href="#contact">Contact</a></nav>
+<header class="site-header">
+  <div class="nav-inner wrap">
+    <a class="home-link" href="#top">Anushka Jain</a>
+    <nav aria-label="Main navigation">
+      <a href="#work">Work / Projects</a>
+      <a href="#about">About</a>
+      <a href="#skills">Technical Skills</a>
+      <a href="#awards">Awards &amp; Accomplishments</a>
+    </nav>
+  </div>
 </header>
 <main id="main">
-<section class="hero wrap" id="top" aria-labelledby="title">
-  <div class="hero-copy">
-    <p class="label"><span class="dot"></span> Independent portfolio <span class="slash">/</span> Toronto</p>
-    <h1 id="title">Ms. Anushka<br><i>Jain.</i></h1>
-    <p class="role">Interaction &amp; UI/UX Designer<br>and Junior Developer</p>
-    <p class="intro">I design how things feel to use, then build them to see what they can become.</p>
-    <div class="actions"><a class="button primary" href="#work">Explore the work <span aria-hidden="true">↘</span></a><a class="button quiet" href="#resume">View résumé <span aria-hidden="true">↗</span></a></div>
+<section class="landing wrap" id="top" aria-labelledby="title">
+  <h1 id="title">Ms. Anushka Jain</h1>
+  <div class="diptych">
+    <figure class="frame portrait"><figcaption>Portrait</figcaption></figure>
+    <figure class="frame companion"><figcaption>Second frame</figcaption></figure>
   </div>
-  <figure class="hero-art">
-    <img src="assets/orbit.svg" alt="" width="720" height="760" fetchpriority="high">
-    <figcaption><span>AJ / 01</span><span>Studies in interaction</span></figcaption>
-  </figure>
+  <div class="landing-caption">
+    <p>Interaction &amp; UI/UX Designer <span aria-hidden="true">/</span> Junior Developer</p>
+    <div class="secondary"><a href="#resume">Résumé ↗</a><a href="#contact">Contact ↗</a></div>
+  </div>
 </section>
 <section class="work wrap" id="work" aria-labelledby="work-title">
   <div class="section-top"><p class="label">01 / Portfolio</p><h2 id="work-title">Selected <i>work.</i></h2><p>Project stories, working prototypes, and experiments in progress.</p></div>
@@ -44,7 +50,13 @@
   </div>
 </section>
 <section class="split wrap" id="about" aria-labelledby="about-title">
-  <p class="label">02 / About</p><div><h2 id="about-title">A little <i>about me.</i></h2><p class="large">I’m Anushka, an interaction design student at George Brown Polytechnic with a background in computer science studies at Toronto Metropolitan University.</p><p>My practice brings together visual design, interaction design, and programming. I like getting close to both halves of a project: shaping the experience and figuring out how to make it work.</p></div>
+  <p class="label">About</p><div><h2 id="about-title">Professional Summary</h2><p class="large">I’m Anushka, an interaction design student at George Brown Polytechnic with a background in computer science studies at Toronto Metropolitan University.</p><p>My practice brings together visual design, interaction design, and programming. I like getting close to both halves of a project: shaping the experience and figuring out how to make it work.</p></div>
+</section>
+<section class="split wrap" id="skills" aria-labelledby="skills-title">
+  <p class="label">Skills</p><div><h2 id="skills-title">Technical Skills</h2><dl><dt>Design</dt><dd>Interface design, interaction design, prototyping</dd><dt>Development</dt><dd>HTML, CSS, JavaScript, Bootstrap</dd></dl></div>
+</section>
+<section class="split wrap" id="awards" aria-labelledby="awards-title">
+  <p class="label">Recognition</p><div><h2 id="awards-title">Awards &amp; Accomplishments</h2><p>Entries to be added from your verified résumé and records.</p></div>
 </section>
 <section class="split wrap" id="resume" aria-labelledby="resume-title">
   <p class="label">03 / Résumé</p><div><h2 id="resume-title">Design <i>&amp;</i> development.</h2><dl><dt>Design</dt><dd>Interaction design · UI/UX · Visual design · Prototyping</dd><dt>Development</dt><dd>Front-end development · Creative coding · Interactive prototypes</dd><dt>Education</dt><dd>Interaction Design, George Brown Polytechnic<br>Prior Computer Science studies, Toronto Metropolitan University</dd></dl><p id="resume-note">A downloadable résumé will be added here.</p><div id="resume-links" class="actions"></div></div>
@@ -54,6 +66,5 @@
 </section>
 </main>
 <footer class="footer wrap"><span>Ms. Anushka Jain</span><a href="#top">Back to top ↑</a></footer>
-<aside class="review wrap" aria-label="Design preview controls"><p class="label">Design review / Pick a direction</p><div class="choices" role="group" aria-label="Visual direction"><button type="button" data-direction="archive" aria-pressed="true">01 Archive</button><button type="button" data-direction="observatory" aria-pressed="false">02 Observatory</button><button type="button" data-direction="gallery" aria-pressed="false">03 Gallery</button></div><label class="cursor-setting"><input type="checkbox" id="loading-cursor" checked> Custom loading cursor</label></aside>
 </body>
 </html>

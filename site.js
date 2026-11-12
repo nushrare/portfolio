@@ -3,29 +3,8 @@ const publicLinks = {
   resume: '', email: '', linkedin: '', github: '', booking: '',
 };
 const root = document.documentElement;
-const cursor = document.querySelector('#loading-cursor');
-const directions = [...document.querySelectorAll('[data-direction]')];
-function readPreference(key) {
-  try { return localStorage.getItem(key); } catch { return null; }
-}
-function savePreference(key, value) {
-  try { localStorage.setItem(key, value); } catch { /* Preferences are optional. */ }
-}
-function setDirection(direction) {
-  if (!directions.some(button => button.dataset.direction === direction)) return;
-  root.dataset.direction = direction;
-  directions.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.direction === direction)));
-  savePreference('aj-direction', direction);
-}
-setDirection(readPreference('aj-direction') || 'archive');
-directions.forEach(button => button.addEventListener('click', () => setDirection(button.dataset.direction)));
-cursor.checked = readPreference('aj-cursor') !== 'off';
-if (cursor.checked && document.readyState !== 'complete') root.dataset.loading = 'true';
+if (document.readyState !== 'complete') root.dataset.loading = 'true';
 window.addEventListener('load', () => delete root.dataset.loading, {once:true});
-cursor.addEventListener('change', () => {
-  savePreference('aj-cursor', cursor.checked ? 'on' : 'off');
-  if (!cursor.checked) delete root.dataset.loading;
-});
 const feelingButtons = [...document.querySelectorAll('[data-feeling]')];
 feelingButtons.forEach(button => button.addEventListener('click', () => {
   feelingButtons.forEach(choice => choice.setAttribute('aria-pressed', String(choice === button)));

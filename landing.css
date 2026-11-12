@@ -1,0 +1,15 @@
+:root{--bg:#fff;--ink:#141414;--muted:#4b4b4b;--line:#dedede;--panel:#f5f5f3;--accent:#303b55;--on:#fff;--serif:var(--sans)}
+@media(prefers-color-scheme:dark){:root{--bg:#181818;--ink:#f4f3f0;--muted:#c8c6c1;--line:#444;--panel:#252525;--accent:#c2d1f6;--on:#141414}}
+.wrap{width:min(calc(100% - 4rem),86rem)}
+.site-header{border-bottom:1px solid var(--line)}.nav-inner{display:flex;justify-content:space-between;align-items:center;gap:1rem;min-height:68px}
+.home-link{font-weight:650;text-decoration:none;white-space:nowrap}
+.nav-inner nav,.secondary{display:flex;align-items:center;gap:clamp(1rem,3.3vw,3.25rem)}.nav-inner nav a,.secondary a{font-size:.94rem;text-decoration:none;color:var(--muted)}.nav-inner nav a:hover,.secondary a:hover{text-decoration:underline;color:var(--ink)}
+.landing{padding-top:clamp(2.25rem,5.6vw,5rem);padding-bottom:clamp(2.2rem,5vw,4rem)}
+.landing h1{font:400 clamp(2.35rem,7vw,7.4rem)/1.02 var(--sans);letter-spacing:-.045em;text-transform:uppercase;text-align:center;margin:0 0 clamp(1.6rem,4.5vw,4rem)}
+.diptych{display:grid;grid-template-columns:1fr 1fr;gap:clamp(.45rem,1vw,.8rem)}
+.frame{margin:0;aspect-ratio:1.5;background:var(--panel);position:relative;display:grid;place-items:center;overflow:hidden}.frame figcaption{color:var(--muted);font-size:.83rem}
+.frame:has(img) figcaption{display:none}.frame img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
+.landing-caption{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;margin-top:clamp(1rem,2.6vw,2.2rem)}.landing-caption p{font-size:clamp(.93rem,1.8vw,1.35rem);font-weight:550;margin:0}.landing-caption p span{padding-inline:.25em}
+.split h2,.section-top h2{font-size:clamp(2rem,5.5vw,4.5rem);line-height:1.04;letter-spacing:-.055em}
+@media(max-width:820px){.nav-inner{flex-wrap:wrap;padding-block:.7rem;gap:.5rem}.nav-inner nav{width:100%;flex-wrap:wrap;gap:.4rem 1.25rem}.nav-inner nav a{display:inline-flex;align-items:center;min-height:36px}}
+@media(max-width:540px){.wrap{width:calc(100% - 2rem)}.nav-inner nav{display:grid;grid-template-columns:auto 1fr;gap:.25rem .85rem}.nav-inner nav a{font-size:.79rem}.landing-caption{align-items:flex-start;flex-direction:column}.frame{aspect-ratio:1.05}}
