@@ -19,7 +19,7 @@
 <link rel="stylesheet" href="signature-contact.css?v=contact-form">
 <link rel="alternate" hreflang="en" href="./">
 <link rel="alternate" hreflang="hi" href="hindi.html">
-<link rel="stylesheet" href="project-gallery.css?v=project-art">
+<link rel="stylesheet" href="project-gallery.css?v=work-order">
 <script src="portfolio-intro.js" defer></script>
 <script src="gallery-filter.js" defer></script>
 <script defer src="contact-form.js"></script>
@@ -32,9 +32,9 @@
     <a class="home-link" href="#top" aria-label="Anushka Jain — Home"><img src="assets/aj-interlock.svg" alt="" width="36" height="36"><span class="header-name">Anushka Jain</span></a>
     <nav aria-label="Main navigation">
       <a href="#work">Work / Projects</a>
-      <a href="#about">About</a>
       <a href="#skills">Technical Skills</a>
-      <a href="#awards">Awards &amp; Accomplishments</a>
+      <a href="#about">About</a>
+      <a href="assets/anushka-jain-resume.pdf">Résumé</a>
       <a href="#contact">Contact</a>
     </nav>
   </div>
@@ -46,6 +46,7 @@
     <div class="signature-mark" aria-hidden="true"><img src="assets/aj-interlock.svg" alt="" width="70" height="70"><span class="signature-shine"></span><span class="signature-spark"></span></div>
     <h1 id="title">Ms. Anushka Jain</h1>
     <p class="landing-role">Interaction &amp; UI/UX Designer <span aria-hidden="true">·</span> Developer</p>
+    <p class="landing-intro">I came to design through code.</p>
     <div class="secondary"><a href="assets/anushka-jain-resume.pdf">Résumé (PDF) ↗</a></div>
   </div>
   <a class="landing-work" href="#work">Explore my work <span aria-hidden="true">↓</span></a>
@@ -53,6 +54,9 @@
 <section class="work wrap" id="work" aria-labelledby="work-title">
   <div class="section-top"><h2 id="work-title">Work / Projects</h2></div>
   <div class="work-controls" role="group" aria-label="Filter projects" hidden><button type="button" data-filter="all" aria-pressed="true">All</button><button type="button" data-filter="design" aria-pressed="false">UX/UI &amp; Interaction Design</button><button type="button" data-filter="development" aria-pressed="false">Development</button></div>
+  <div class="project-feature-wrap" data-project-category="development">
+    <article class="project-feature"><div class="project-preview preview-anuraga" aria-hidden="true"><img src="assets/anuraga/screen-1.jpg" alt="" loading="lazy"><img src="assets/anuraga/screen-3.jpg" alt="" loading="lazy"></div><div class="project-copy"><p class="project-feature-label">Featured project</p><p class="project-type">Interface Development · Coursework</p><h3>ANURAGA</h3><p>A relationship wellbeing web prototype with mood selection, daily check-ins, reflection forms, and browser-based storage. Built with HTML, CSS, JavaScript, and Bootstrap.</p><a href="anuraga.html">Read the case study ↗</a></div></article>
+  </div>
   <div class="project-group" data-project-category="design" aria-labelledby="design-projects">
     <h3 id="design-projects">UX/UI &amp; Interaction Design</h3>
     <ol class="project-grid">
@@ -64,10 +68,20 @@
   <div class="project-group" data-project-category="development" aria-labelledby="developer-projects">
     <h3 id="developer-projects">Development</h3>
     <ol class="project-grid">
-      <li><article><div class="project-preview preview-anuraga" aria-hidden="true"><img src="assets/anuraga/screen-1.jpg" alt="" loading="lazy"><img src="assets/anuraga/screen-3.jpg" alt="" loading="lazy"></div><div class="project-copy"><p class="project-type">Interface Development · Coursework</p><h4>ANURAGA</h4><p>A relationship wellbeing web prototype with mood selection, daily check-ins, reflection forms, and browser-based storage. Built with HTML, CSS, JavaScript, and Bootstrap.</p><a href="anuraga.html">Read the case study ↗</a></div></article></li>
       <li><article><div class="project-preview preview-dashboard" aria-hidden="true"><img src="assets/work/dashboard.jpg" alt="" loading="lazy"></div><div class="project-copy"><p class="project-type">Assignment 2 · DataTables proof of concept</p><h4>Interactive International Student Financial Dashboard</h4><p>Search and sort study-abroad costs by institution or city, estimate a full-program budget, and add a sample estimate to the comparison table.</p><a href="https://nushrare.github.io/A2-International-Student-Financial-Dashboard/">Open dashboard ↗</a></div></article></li>
       <li><article><div class="project-preview preview-cost-story" aria-hidden="true"><img src="assets/work/cost-story.jpg" alt="" loading="lazy"></div><div class="project-copy"><p class="project-type">Assignment 1 · Data visualization</p><h4>The Cost of Being an International Student</h4><p>An interactive data story about my estimated four-year cost of studying in Toronto. Filter expenses, switch between CAD and INR, and explore how the costs add up over time.</p><a href="https://nushrare.github.io/A1-Cost-of-being-an-International-Student/">Explore the data story ↗</a></div></article></li>
     </ol>
+  </div>
+</section>
+<section class="split wrap" id="skills" aria-labelledby="skills-title">
+  <p class="label">Skills</p><div><h2 id="skills-title">Technical Skills</h2>
+    <ul class="skill-list">
+      <li><strong>UX &amp; Interaction Design:</strong> UX research, usability testing (surveys and think-aloud testing), information architecture, sitemaps, user flows, personas, journey maps, cognitive ergonomics, interaction design, information design, interface design, visual design, wireframing, prototyping, accessibility, technical drawing</li>
+      <li><strong>Design Tools &amp; Technologies:</strong> Adobe Illustrator, Photoshop, After Effects, Autodesk Maya, Figma, Canva, Bootstrap, Processing (Java mode), GitHub</li>
+      <li><strong>Programming &amp; Web Development:</strong> HTML, CSS, JavaScript, Java, jQuery, AJAX, Node.js, Python, C++</li>
+      <li><strong>Data &amp; APIs:</strong> Chart.js, DataTables, JSON, API integration</li>
+    </ul>
+    <p class="actions" id="resume"><a class="button quiet" href="assets/anushka-jain-resume.pdf" download>Download résumé (PDF) ↓</a></p>
   </div>
 </section>
 <section class="split wrap" id="about" aria-labelledby="about-title">
@@ -84,26 +98,14 @@
       <p>I direct images for my modelling portfolio and enjoy speaking to a room as much as designing for someone on the other side of a screen. This site is also available in Hindi. I wanted there to be room for both languages in how I introduce myself.</p>
       <div class="about-links"><a href="https://www.nushrare.com/">Modelling portfolio ↗</a><a href="#contact">Get in touch ↓</a></div>
     </div>
-  </div>
-</section>
-<section class="split wrap" id="skills" aria-labelledby="skills-title">
-  <p class="label">Skills</p><div><h2 id="skills-title">Technical Skills</h2>
-    <ul class="skill-list">
-      <li><strong>UX &amp; Interaction Design:</strong> UX research, usability testing (surveys and think-aloud testing), information architecture, sitemaps, user flows, personas, journey maps, cognitive ergonomics, interaction design, information design, interface design, visual design, wireframing, prototyping, accessibility, technical drawing</li>
-      <li><strong>Design Tools &amp; Technologies:</strong> Adobe Illustrator, Photoshop, After Effects, Autodesk Maya, Figma, Canva, Bootstrap, Processing (Java mode), GitHub</li>
-      <li><strong>Programming &amp; Web Development:</strong> HTML, CSS, JavaScript, Java, jQuery, AJAX, Node.js, Python, C++</li>
-      <li><strong>Data &amp; APIs:</strong> Chart.js, DataTables, JSON, API integration</li>
-    </ul>
-    <p class="actions" id="resume"><a class="button quiet" href="assets/anushka-jain-resume.pdf" download>Download résumé (PDF) ↓</a></p>
-  </div>
-</section>
-<section class="split wrap" id="awards" aria-labelledby="awards-title">
-  <p class="label">Recognition</p><div><h2 id="awards-title">Awards &amp; Accomplishments</h2>
+    <section class="about-elsewhere" id="awards" aria-labelledby="awards-title">
+      <h3 id="awards-title">Awards &amp; Accomplishments</h3>
     <ul class="award-list">
       <li><strong>TEDx TMU Ambassador Award</strong><span>Toronto Metropolitan University · February 2023</span></li>
       <li><strong>Top 20, Toastmasters TEDx TMU Public Speaking Competition</strong><span>Toronto Metropolitan University · February 2023</span></li>
       <li><strong>100 Designs Achievement Certificate</strong><span>Canva · 2024</span></li>
     </ul>
+    </section>
   </div>
 </section>
 <section class="contact contact-close" id="contact" aria-labelledby="contact-title">

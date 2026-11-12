@@ -83,3 +83,39 @@
 .preview-safeway { background: #e7edf0; }
 .preview-checkless { background: #c8c7bb; }
 .preview-checkless img { object-fit: cover; }
+
+.landing-intro {
+  margin: .55rem 0 0;
+  font-size: .95rem;
+}
+.project-feature-wrap {
+  margin-bottom: clamp(2rem, 5vw, 4rem);
+}
+.project-feature-wrap[hidden] { display: none; }
+.project-feature {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  align-items: center;
+  gap: clamp(1rem, 4vw, 3.5rem);
+  position: relative;
+  padding-bottom: clamp(1rem, 3vw, 2rem);
+  border-bottom: 1px solid var(--line);
+}
+.project-feature .project-preview { aspect-ratio: 16 / 10; }
+.project-feature .project-copy { border: 0; padding: 0; }
+.project-feature h3 {
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  margin-block: .65rem;
+}
+.project-feature-label {
+  color: var(--accent);
+  font-size: .8rem;
+  font-weight: 650;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+@media (max-width: 640px) {
+  .project-feature { grid-template-columns: 1fr; }
+}
