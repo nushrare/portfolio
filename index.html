@@ -22,6 +22,7 @@
 <link rel="stylesheet" href="project-gallery.css?v=finance">
 <script src="portfolio-intro.js" defer></script>
 <script src="gallery-filter.js" defer></script>
+<script defer src="contact-form.js"></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -96,6 +97,19 @@
     <p class="label">Contact</p>
     <h2 id="contact-title">Let’s work together.</h2>
     <p class="large">For design and development opportunities, creative direction, and collaborations, email me directly.</p>
+    <div class="contact-compose" hidden>
+      <h3 id="contact-form-title">Write to me</h3>
+      <form class="contact-form" aria-labelledby="contact-form-title" aria-describedby="contact-form-note">
+        <div class="contact-form-names">
+          <label>First name<input name="firstName" autocomplete="given-name" maxlength="80" required></label>
+          <label>Last name<input name="lastName" autocomplete="family-name" maxlength="80" required></label>
+        </div>
+        <label>Email<input type="email" name="email" autocomplete="email" maxlength="254" required></label>
+        <label>Message<textarea name="message" rows="4" required></textarea></label>
+        <button type="submit">Open email draft</button>
+        <p id="contact-form-note">Opens your email app with your message ready to send.</p>
+      </form>
+    </div>
     <ul class="contact-directory" role="list">
       <li><a href="mailto:anushkajainbusiness@gmail.com">Email</a></li>
       <li><a href="https://www.linkedin.com/in/nushrare/">LinkedIn</a></li>
@@ -106,7 +120,7 @@
 </section>
 </main>
 <footer class="closing-footer">
-  <a class="closing-signature" href="#top"><img src="assets/aj-interlock.svg" alt="" width="76" height="76"><span>Ms. Anushka Jain</span></a>
+  <a class="closing-signature" href="#top"><img src="assets/aj-interlock.svg" alt="" width="38" height="38"><span>Ms. Anushka Jain</span></a>
   <div class="closing-utility wrap">
     <nav class="language-choice" aria-label="Change language"><span>Change language</span><a href="./#contact" lang="en" hreflang="en" aria-current="page">English</a><a href="hindi.html#contact" lang="hi" hreflang="hi">हिन्दी</a></nav>
     <a href="#top">Back to top ↑</a>

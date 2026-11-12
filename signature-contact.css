@@ -1,14 +1,14 @@
 .site-header[data-at-contact] .home-link,.site-header[data-at-contact] .header-name{visibility:hidden}
-.contact-close{border-top:1px solid var(--line);display:grid;align-items:center;min-height:clamp(31rem,68svh,47rem);text-align:center;background:radial-gradient(ellipse at 50% 42%,var(--panel),var(--bg) 72%)}
-.contact-inner{padding-block:clamp(4rem,9vw,8rem)}
+.contact-close{border-top:1px solid var(--line);text-align:center;background:radial-gradient(ellipse at 50% 42%,var(--panel),var(--bg) 72%)}
+.contact-inner{padding-block:clamp(2.5rem,5vw,4.5rem)}
 .contact-inner>.label{letter-spacing:.19em}
-.contact-inner h2{font-family:Georgia,"Times New Roman",serif;line-height:1.06;font-size:clamp(2.7rem,7vw,6.2rem);margin:.75rem 0 1.3rem}
+.contact-inner h2{font-family:Georgia,"Times New Roman",serif;line-height:1.06;font-size:clamp(2.6rem,6vw,5rem);margin:.75rem 0 1.3rem}
 .contact-inner>.large{max-width:44ch;margin-inline:auto;color:var(--muted);text-wrap:pretty}
 .contact-inner .contact-directory{justify-content:center;margin:2.4rem auto 0;border-block:1px solid var(--line);width:min(100%,38rem);padding-block:.5rem;gap:.3rem clamp(.6rem,4vw,3rem)}
 .closing-footer{text-align:center;background:#261710;color:#f9e9d1;border-top:1px solid #b47d4c}
-.closing-signature{display:inline-flex;flex-direction:column;align-items:center;gap:.85rem;margin:0 auto;padding:clamp(2.5rem,6vw,5rem) 1rem;text-decoration:none;color:inherit;font:clamp(1.8rem,4vw,3.1rem)/1.15 Georgia,"Times New Roman",serif}
+.closing-signature{display:inline-flex;align-items:center;gap:.65rem;margin:0 auto;padding:1.15rem .5rem;text-decoration:none;color:inherit;font:clamp(1.25rem,2.8vw,1.65rem)/1.15 Georgia,"Times New Roman",serif}
 .closing-signature:hover,.closing-utility a:hover{color:#ffcf8e}
-.closing-signature img{width:clamp(48px,7vw,76px);height:auto}
+.closing-signature img{width:38px;height:auto}
 .closing-utility{border-top:1px solid #a579544d;display:flex;justify-content:space-between;align-items:center;gap:.75rem 1.4rem;flex-wrap:wrap;padding-block:1rem;font-size:.86rem}
 .language-choice{display:flex;align-items:center;flex-wrap:wrap;gap:.9rem}.language-choice span{color:#dbbc97}.language-choice a[aria-current=page]{text-decoration:none;color:#ffcf8e}
 .closing-footer :focus-visible,.arrival-skip:focus-visible{outline-color:#ffddae}
@@ -24,3 +24,66 @@ html[lang=hi] .contact-inner h2{line-height:1.25;letter-spacing:0}
 .arrival.is-docking .arrival-skip{visibility:hidden}
 .landing-content>.signature-mark.is-arriving{opacity:0}
 @media(prefers-reduced-motion:reduce){.arrival::before{transition:none}}
+
+.contact-compose {
+  width: min(100%, 36rem);
+  margin: clamp(1.7rem, 4vw, 2.8rem) auto 0;
+  padding-top: clamp(1.35rem, 3vw, 2rem);
+  border-top: 1px solid var(--line);
+}
+.contact-compose h3 {
+  margin: 0 0 1.2rem;
+  font-size: 1.05rem;
+  line-height: 1.4;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+.contact-form, .contact-form-names {
+  display: grid;
+  gap: 1rem;
+}
+.contact-form { text-align: left; }
+.contact-form-names { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.contact-form label {
+  display: grid;
+  gap: .35rem;
+  min-width: 0;
+  font-size: .9rem;
+  font-weight: 600;
+}
+.contact-form :is(input, textarea) {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 44px;
+  padding: .6rem .75rem;
+  border: 1px solid var(--muted);
+  border-radius: 4px;
+  background: var(--bg);
+  color: var(--ink);
+  font: inherit;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.contact-form textarea { resize: vertical; }
+.contact-form button {
+  justify-self: center;
+  min-height: 44px;
+  padding: .65rem 1.35rem;
+  border: 1px solid #b47d4c;
+  border-radius: 4px;
+  background: #261710;
+  color: #f9e9d1;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+.contact-form button:hover { background: #513321; }
+#contact-form-note {
+  margin: -.35rem 0 0;
+  color: var(--muted);
+  font-size: .85rem;
+  text-align: center;
+}
+@media (max-width: 400px) {
+  .contact-form-names { grid-template-columns: 1fr; }
+}
