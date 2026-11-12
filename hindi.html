@@ -19,7 +19,9 @@
 <link rel="stylesheet" href="signature-contact.css">
 <link rel="alternate" hreflang="en" href="./">
 <link rel="alternate" hreflang="hi" href="hindi.html">
+<link rel="stylesheet" href="project-gallery.css">
 <script src="portfolio-intro.js" defer></script>
+<script src="gallery-filter.js" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">मुख्य सामग्री पर जाएँ</a>
@@ -48,20 +50,21 @@
 </section>
 <section class="work wrap" id="work" aria-labelledby="work-title">
   <div class="section-top"><h2 id="work-title">काम और प्रोजेक्ट</h2></div>
-  <div class="project-group" aria-labelledby="design-projects">
+  <div class="work-controls" role="group" aria-label="प्रोजेक्ट फ़िल्टर" hidden><button type="button" data-filter="all" aria-pressed="true">सभी</button><button type="button" data-filter="design" aria-pressed="false">UX/UI और इंटरैक्शन डिज़ाइन</button><button type="button" data-filter="development" aria-pressed="false">डेवलपमेंट</button></div>
+  <div class="project-group" data-project-category="design" aria-labelledby="design-projects">
     <h3 id="design-projects">UX/UI और इंटरैक्शन डिज़ाइन</h3>
     <ol class="project-grid">
-      <li><article><p class="project-type">भौतिक इंटरफ़ेस · समूह प्रोजेक्ट</p><h4>SafeWay</h4><p>TTC के लिए सुरक्षा-केंद्रित नेविगेशन की अवधारणा, जिसमें सेफ़ मोड, सुरक्षित स्टॉप, सेवा में बदलाव की सूचनाएँ और सुलभ वैकल्पिक मार्ग शामिल हैं। मैंने Figma में वायरफ़्रेम और प्रोटोटाइप के सह-डिज़ाइन पर काम किया।</p></article></li>
-      <li><article><p class="project-type">भौतिक इंटरफ़ेस · समूह प्रोजेक्ट</p><h4>Checkless</h4><p>Tamagotchi से प्रेरित एक उपकरण, जिसे स्मार्टवॉच या कीचेन की तरह इस्तेमाल किया जा सकता है, और उसका साथी ऐप। मैंने उपकरण और ऐप के उपयोग-प्रवाह को टीम के साथ डिज़ाइन किया और fal.ai से दृश्य-दर-दृश्य उत्पाद वीडियो बनाया।</p></article></li>
-      <li><article><p class="project-type">सूचना संरचना · टीम प्रोजेक्ट</p><h4>Craigslist वेबसाइट का नया डिज़ाइन</h4><p>वर्गीकृत विज्ञापनों के अनुभव को बेहतर बनाने का छह हफ़्तों का प्रोजेक्ट। सर्वे और ऐसे उपयोगिता परीक्षणों से, जिनमें प्रतिभागियों ने अपने विचार बोलकर बताए, नेविगेशन, उपयोग-प्रवाह और वायरफ़्रेम में बदलाव किए गए।</p></article></li>
+      <li><article><div class="project-preview preview-safeway" aria-hidden="true"><svg viewBox="0 0 390 200" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M35 151h83l45-55h86l45-50h68M35 58h110l45 48h104l67 50" stroke-width="5"/><g fill="currentColor" stroke="none"><circle cx="118" cy="151" r="8"/><circle cx="163" cy="96" r="8"/><circle cx="249" cy="96" r="8"/><circle cx="294" cy="46" r="8"/></g><circle cx="194" cy="105" r="17" stroke-width="2"/></svg></div><div class="project-copy"><p class="project-type">भौतिक इंटरफ़ेस · समूह प्रोजेक्ट</p><h4>SafeWay</h4><p>TTC के लिए सुरक्षा-केंद्रित नेविगेशन की अवधारणा, जिसमें सेफ़ मोड, सुरक्षित स्टॉप, सेवा में बदलाव की सूचनाएँ और सुलभ वैकल्पिक मार्ग शामिल हैं। मैंने Figma में वायरफ़्रेम और प्रोटोटाइप के सह-डिज़ाइन पर काम किया।</p></div></article></li>
+      <li><article><div class="project-preview preview-checkless" aria-hidden="true"><svg viewBox="0 0 390 200" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="143" y="42" width="104" height="113" rx="28" stroke-width="5"/><path d="M166 42V12h58v30m-58 113v32h58v-32M166 104h16l8-18 14 32 9-14h11" stroke-width="5"/><circle cx="190" cy="64" r="4" fill="currentColor"/></svg></div><div class="project-copy"><p class="project-type">भौतिक इंटरफ़ेस · समूह प्रोजेक्ट</p><h4>Checkless</h4><p>Tamagotchi से प्रेरित एक उपकरण, जिसे स्मार्टवॉच या कीचेन की तरह इस्तेमाल किया जा सकता है, और उसका साथी ऐप। मैंने उपकरण और ऐप के उपयोग-प्रवाह को टीम के साथ डिज़ाइन किया और fal.ai से दृश्य-दर-दृश्य उत्पाद वीडियो बनाया।</p></div></article></li>
+      <li><article><div class="project-preview preview-craigslist" aria-hidden="true"><svg viewBox="0 0 390 200" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="63" y="31" width="263" height="139" rx="8" stroke-width="4"/><path d="M64 59h262m-171 0v110M83 79h48m-48 20h48m-48 20h35m61-40h121m-121 19h121m-121 19h86m-86 19h121" stroke-width="4"/></svg></div><div class="project-copy"><p class="project-type">सूचना संरचना · टीम प्रोजेक्ट</p><h4>Craigslist वेबसाइट का नया डिज़ाइन</h4><p>वर्गीकृत विज्ञापनों के अनुभव को बेहतर बनाने का छह हफ़्तों का प्रोजेक्ट। सर्वे और ऐसे उपयोगिता परीक्षणों से, जिनमें प्रतिभागियों ने अपने विचार बोलकर बताए, नेविगेशन, उपयोग-प्रवाह और वायरफ़्रेम में बदलाव किए गए।</p></div></article></li>
     </ol>
   </div>
-  <div class="project-group" aria-labelledby="developer-projects">
+  <div class="project-group" data-project-category="development" aria-labelledby="developer-projects">
     <h3 id="developer-projects">डेवलपमेंट</h3>
     <ol class="project-grid">
-      <li><article><p class="project-type">इंटरफ़ेस डेवलपमेंट · पाठ्यक्रम प्रोजेक्ट</p><h4>ANURAGA</h4><p>रिश्तों की देखभाल के लिए एक वेब प्रोटोटाइप, जिसमें मनोदशा चुनने, रोज़ अपना हाल दर्ज करने, विचार लिखने और जानकारी ब्राउज़र में सहेजने की सुविधाएँ हैं। इसे HTML, CSS, JavaScript और Bootstrap से बनाया गया है।</p></article></li>
-      <li><article><p class="project-type">डेटा विज़ुअलाइज़ेशन</p><h4>इंटरैक्टिव वित्तीय डैशबोर्ड और डेटा विज़ुअलाइज़ेशन</h4><p>खोज, क्रमबद्ध करने, फ़िल्टर करने और गणना की सुविधाओं वाले इंटरैक्टिव चार्ट और डेटा दृश्य। इन्हें JavaScript, Chart.js, jQuery और DataTables से बनाया गया है।</p></article></li>
-      <li><article><p class="project-type">वेब डेवलपमेंट · पाठ्यक्रम प्रोजेक्ट</p><h4>API चैटबॉट और डायनमिक डेटा इंटरफ़ेस</h4><p>एक चैटबॉट प्रोजेक्ट जो Gemini API को JSON अनुरोध भेजकर जवाब दिखाता है। इसमें JSON पर आधारित तालिकाएँ और ज़रूरत के अनुसार पेज की सामग्री लोड करने की सुविधा भी है।</p></article></li>
+      <li><article><div class="project-preview preview-anuraga" aria-hidden="true"><img src="assets/anuraga/screen-1.jpg" alt="" loading="lazy"><img src="assets/anuraga/screen-3.jpg" alt="" loading="lazy"></div><div class="project-copy"><p class="project-type">इंटरफ़ेस डेवलपमेंट · पाठ्यक्रम प्रोजेक्ट</p><h4>ANURAGA</h4><p>रिश्तों की देखभाल के लिए एक वेब प्रोटोटाइप, जिसमें मनोदशा चुनने, रोज़ अपना हाल दर्ज करने, विचार लिखने और जानकारी ब्राउज़र में सहेजने की सुविधाएँ हैं। इसे HTML, CSS, JavaScript और Bootstrap से बनाया गया है।</p><a href="anuraga-hi.html">केस स्टडी पढ़ें ↗</a></div></article></li>
+      <li><article><div class="project-preview preview-dashboard" aria-hidden="true"><svg viewBox="0 0 390 200" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M62 36v125h268M76 128l42-37 39 13 44-53 42 20 52-36" stroke-width="4"/><path d="M95 151v-11m39 11v-22m42 22v-36m42 36v-29m42 29v-50m41 50v-70" stroke-width="9" opacity=".52"/></svg></div><div class="project-copy"><p class="project-type">डेटा विज़ुअलाइज़ेशन</p><h4>इंटरैक्टिव वित्तीय डैशबोर्ड और डेटा विज़ुअलाइज़ेशन</h4><p>खोज, क्रमबद्ध करने, फ़िल्टर करने और गणना की सुविधाओं वाले इंटरैक्टिव चार्ट और डेटा दृश्य। इन्हें JavaScript, Chart.js, jQuery और DataTables से बनाया गया है।</p></div></article></li>
+      <li><article><div class="project-preview preview-chat" aria-hidden="true"><svg viewBox="0 0 390 200" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M54 44h198v56H96l-26 19v-19H54zm108 74h172v52h-22v18l-27-18H162zM77 65h143M77 79h90m117 59h31m-126 0h74m-74 14h106" stroke-width="4"/></svg></div><div class="project-copy"><p class="project-type">वेब डेवलपमेंट · पाठ्यक्रम प्रोजेक्ट</p><h4>API चैटबॉट और डायनमिक डेटा इंटरफ़ेस</h4><p>एक चैटबॉट प्रोजेक्ट जो Gemini API को JSON अनुरोध भेजकर जवाब दिखाता है। इसमें JSON पर आधारित तालिकाएँ और ज़रूरत के अनुसार पेज की सामग्री लोड करने की सुविधा भी है।</p></div></article></li>
     </ol>
   </div>
 </section>
